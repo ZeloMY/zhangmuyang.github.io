@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>我的旅途</title>
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" media="screen" />
+		<link rel="stylesheet" href="css/journey.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+	</head>
+
+	<body class="home blog custom-background">
+		<div id="wrap">
+			<div id="header" class="clearfix">
+				<div id="logo" class="sprite">
+					<div class="sprite circle">
+						<a href="#" title="张幕阳的旅程">
+							<img src="img/avatar.jpg" alt="logo">
+						</a>
+					</div>
+				</div>
+				<div class="mod-right">
+					<h1><a href="#" title="张幕阳的旅程">张幕阳的旅程</a></h1>
+					<div class="description">
+						行走，停顿，驻足，思考。</div>
+					<div class="tools">
+						<div class="menu-%e8%8f%9c%e5%8d%951-container">
+							<ul id="header_menu" class="clearfix">
+								<li id="menu-item-1879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1879"><a href="index.html">首页</a></li>
+								<li id="menu-item-1879" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1879"><a href="resume.html">简历</a></li>
+
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div id="main">
+				<div class="post post-text  clearfix post-left">
+					<div class="post-date">
+						<span class="icon day">1</span>
+						<span class="week">
+						<a href="">Wednesday</a>
+						</span>
+						<span class="date">September 1th  2010</span>
+					</div>
+					<div class="post-content">
+						<div class="sprite post-main-bg">
+							<div class="sprite post-main">
+								<div class="mod-txt mod-text">
+									<h2>
+									第一次独自离开河北,济南
+									</h2>
+									<p>
+										对于济南，总有着一份特殊的情节。 成长路上第一次离开家乡到达的城市,一呆就是四年多。 如今，我已离开许久。 但那些成长的经历,那些回忆，那些人,那些回不去的过往。 我们可以静静地待在那里，傻看时光流走，享受一份平静。 ...
+
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sprite post-meta">
+							<img alt='' src='img/jinan.jpg' class="bigimgRedio" />
+						</div>
+					</div>
+				</div>
+				<div class="post post-text  clearfix post-right">
+					<div class="post-date">
+						<span class="icon day">29</span>
+						<span class="week">
+						<a href="">Saturday</a>
+						</span>
+						<span class="date">March 29th  2014</span>
+					</div>
+					<div class="post-content">
+						<div class="sprite post-main-bg">
+							<div class="sprite post-main">
+								<div class="mod-txt mod-text">
+									<h2>我人生去过最大的城市,上海	</h2>
+									<p>那是14年,我辞去了在济南的第一份工作,坐火车从南京一路镇江,苏州,常州最后到达上海。冒着雨去了外滩，去了南京路.中国的长子，一个人,一个背包。
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sprite post-meta">
+							<img alt='' src='img/shanghai.jpg' class="bigimgRedio" />
+						</div>
+					</div>
+				</div>
+				<div class="post post-text  clearfix post-left">
+					<div class="post-date">
+						<span class="icon day">24</span>
+						<span class="week">
+						<a href="">Monday</a>
+					</span>
+						<span class="date">September 22th  2014</span>
+					</div>
+					<div class="post-content">
+						<div class="sprite post-main-bg">
+							<div class="sprite post-main">
+								<div class="mod-txt mod-text">
+									<h2>北漂之旅</h2>
+									<p style="overflow: hidden; text-overflow: ellipsis;">北京,不是第一次来,这个时间是我来北京进第一家公司的入职时间。到现在为止，来北京即将一年整.感触颇多.即便是不喜欢这个 地方,也要对它说声谢谢。谢谢祝我成长~
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="sprite post-meta">
+							<img alt='' src='img/beijing.jpg' class="bigimgRedio" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="footer">
+				<span id="load-more1" class="icon load-more"></span>
+				<br>
+				<div class="copyright">
+					&copy; 2015 张幕阳的旅程　 |Design: <a href="index.html" title="张幕阳的旅程">张幕阳</a>个人网站
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			$('.pages').hover(function() {
+				$('.pages ul').stop().show('fast');
+			}, function() {
+				$('.pages ul').stop().hide('fast');
+			});
+			$('.search').hover(function() {
+				$('.search .ipt-txt').stop().animate({
+					width: 110
+				});
+			}, function() {
+				if ($('.search .ipt-txt:focus').length == 0) {
+					$('.search .ipt-txt').stop().animate({
+						width: 1
+					});
+				}
+			});
+			$('.search .ipt-txt').blur(function() {
+				$('.search .ipt-txt').stop().animate({
+					width: 1
+				});
+			});
+			var i = 2;
+			var max_pages = 7;
+			if (max_pages) {
+				$('#load-more').click(function() {
+					if ((max_pages / i) < 1) {
+						this.className = 'nopages';
+						this.innerHTML = 'The End';
+						$(this).unbind('click');
+						return false;
+					}
+					var _this = this;
+					_this.className = 'loading';
+					var url = '?action=ajax_post&pag=' + i;
+					$.get(url, function(data) {
+						i++;
+						$('#main').append(data);
+						_this.className = 'icon load-more';
+						if ((pmax_pages / i) >= 1) {
+							_this.className = 'nopages';
+							_this.innerHTML = 'The End';
+							$(_this).unbind('click');
+						}
+					});
+				})
+			}
+		</script>
+
+	</body>
+
+</html>
